@@ -1,8 +1,11 @@
 package com.clone.sample;
 
+
+/// Testing this -- 
 public class Employee implements Cloneable {
 
 	private String name;
+	private int intValue;
 
 	public Employee(String name, String age) {
 		super();
@@ -37,6 +40,14 @@ public class Employee implements Cloneable {
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
 		return super.clone();
+	}
+
+	public int getIntValue() {
+		return intValue;
+	}
+
+	public void setIntValue(int intValue) {
+		this.intValue = intValue;
 	}
 
 }
